@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thimdrine, coopérative de 25 femmes de Nador : miel de thym, huile d'olive et confiture de figue de barbarie du Rif.">
+  <title>Accueil | Thimdrine</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- En-tête : le même sur toutes les pages -->
+  <header class="entete">
+    <div class="conteneur entete-contenu">
+      <a class="logo" href="../index.html">
+        <img src="../images/logo.png" alt="">
+        Thimdrine
+      </a>
+      <nav class="menu">
+        <a href="../index.html">Accueil</a>
+        <a href="../produits/produits.html">Nos produits</a>
+        <a href="../a-propos/a-propos.html">À propos</a>
+        <a class="actif" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Bandeau d'accroche -->
+    <section class="hero">
+      <div class="conteneur hero-contenu">
+        <div class="her">
+          <h1>CONTACTEZ-NOUS</h1>
+          <p>Une envie de découvrir nos produits ? Remplissez le formulaire pour passer votre commande.</p>
+    </section>
+
+    <!-- Formulaire de commande -->
+<section class="formulaire">
+  <div class="formulaire-boite">
+
+    <!-- Partie gauche : formulaire -->
+    <div class="formulaire-gauche">
+
+      <form action="#" method="post">
+
+        <div class="champ">
+          <label for="telephone">Téléphone</label>
+          <div class="telephone-groupe">
+            <select id="indicatif" name="indicatif" aria-label="Indicatif téléphonique">
+              <option value="+212">+212</option>
+              <option value="+33">+33</option>
+              <option value="+34">+34</option>
+            </select>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="Numéro Téléphone"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="champ">
+          <label>Information</label>
+          <div class="ligne">
+            <input
+              type="text"
+              name="nom"
+              placeholder="Nom"
+              aria-label="Nom"
+              required
+            >
+            <input
+              type="text"
+              name="prenom"
+              placeholder="Prénom"
+              aria-label="Prénom"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="champ">
+          <label for="quantite">Quantité</label>
+          <select id="quantite" name="quantite" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="champ">
+          <label for="produit">Produit</label>
+          <select id="produit" name="produit" required>
+            <option value="">Sélectionner un produit</option>
+            <option value="miel">Miel de thym</option>
+            <option value="huile">Huile d'olive</option>
+            <option value="confiture">Confiture de figue de barbarie</option>
+            <option value="amlou">Amlou aux amandes</option>
+            <option value="tisane">Tisane de thym sauvage</option>
+            <option value="nectar">Nectar de figue de barbarie</option>
+          </select>
+        </div>
+
+        <div class="champ">
+          <label for="ville">Localisation</label>
+          <select id="ville" name="ville" required>
+            <option value="Oujda"> Oujda</option>
+            <option value="Nador"> Nador</option>
+            <option value="Rabat"> Rabat</option>
+            <option value="Casablanca"> Casablanca</option>
+            <option value="Fès"> Fès</option>
+            <option value="Autre">Autre ville</option>
+          </select>
+        </div>
+
+        <div class="champ">
+          <label for="message">Message / précision</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Votre message..."
+          ></textarea>
+        </div>
+
+        <div class="conditions">
+          <input type="checkbox" id="conditions" name="conditions" required>
+          <label for="conditions">J'accepte les conditions</label>
+        </div>
+
+        <button type="submit" class="bouton-submit">
+          Submit <span>›</span>
+        </button>
+
+      </form>
+    </div>
+
+    <!-- Partie droite : photo -->
+    <div class="formulaire-image"></div>
+
+  </div>
+</section>
+
+  <!-- Pied de page : le même sur toutes les pages -->
+  <footer class="pied">
+    <div class="conteneur pied-colonnes">
+      <div>
+        <h2>Coopérative Thimdrine</h2>
+        <address>
+          Route de Selouane, Nador, Maroc<br>
+          Tél. : <a href="tel:+212536000000">05 36 00 00 00</a><br>
+          E-mail : <a href="mailto:contact@thimdrine.ma">contact@thimdrine.ma</a>
+        </address>
+      </div>
+      <div>
+        <h2>Horaires</h2>
+        <p>Du lundi au samedi<br>de 9 h à 18 h</p>
+      </div>
+      <div>
+        <h2>Plan du site</h2>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../produits/produits.html">Nos produits</a></li>
+          <li><a href="../a-propos/a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Coopérative Thimdrine · Site réalisé à YouCode Nador</p>
+  </footer>
+
+</body>
+</html> 
