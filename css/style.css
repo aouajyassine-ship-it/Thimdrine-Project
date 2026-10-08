@@ -4,18 +4,20 @@
 
 /* Couleurs et polices de la charte */
 :root {
-  --couleur-thym: #3E5C35;
-  --couleur-thym-fonce: #2C4326;
-  --couleur-miel: #E0A526;
-  --couleur-figue: #8A2846;
-  --couleur-lin: #FBF6EC;
-  --couleur-sable: #F3EAD7;
-  --couleur-terre: #2B2118;
-  --couleur-terre-douce: #5C4F42;
-  --couleur-blanc: #FFFFFF;
+  --couleur-thym: #294D36;
+  --couleur-thym-fonce: #294D36;
+  --couleur-miel: #D6A15D;
+  --couleur-figue: #6B2D45;
 
-  --police-titre: 'Lora', Georgia, serif;
-  --police-texte: 'Source Sans 3', Arial, sans-serif;
+  /* Fonds */
+  --couleur-lin: #F7F3EA;
+  --couleur-sable: #EFE9DE;
+
+  /* Textes */
+  --couleur-terre: #2B2B2B;
+  --couleur-terre-douce: #555555;
+
+  --couleur-blanc: #FFFFFF;
 }
 
 
@@ -79,6 +81,7 @@ img {
 
 .section {
   padding: 64px 0;
+  background-color: #FFFFFF;
 }
 
 .section-sable {
@@ -128,7 +131,10 @@ img {
 .logo img {
   width: 44px;
 }
-
+.hero-image{
+    margin-top: 40px;
+    border-radius: 40px;
+}
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -196,7 +202,7 @@ img {
 
 .hero {
   padding: 40px 0;
-  background-color: var(--couleur-blanc);
+  background-color: var(--couleur-lin);
 }
 
 .surtitre {
@@ -276,7 +282,7 @@ img {
 
 .appel {
   padding: 64px 0;
-  background-color: var(--couleur-thym);
+  background-color: #294D36;
   color: var(--couleur-blanc);
   text-align: center;
 }
@@ -295,7 +301,7 @@ img {
 
 .pied {
   padding-top: 40px;
-  background-color: var(--couleur-thym-fonce);
+  background-color: #292929;
   color: var(--couleur-lin);
 }
 
